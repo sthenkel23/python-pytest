@@ -8,6 +8,6 @@ format:
 	black src/python-pytest/*.py
 
 lint:
-	pylint --disable=C src/python-pytest/*.py
+	pylint --disable=C $$(git ls-files 'src/*.py')
 
 all: install lint test format
