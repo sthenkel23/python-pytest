@@ -14,5 +14,6 @@ Create:
 Activate:
 `source ~/.venv/bin/activate`
 
-
 ## Cloud
+
+# aws

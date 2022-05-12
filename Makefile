@@ -6,7 +6,7 @@ test:
 	python -m pytest -vv tests/*.py
 
 format:
-	black src/python-pytest/*.py
+	black src/mylib/*.py
 
 lint:
 	pylint --disable=C $$(git ls-files 'src/*.py')
