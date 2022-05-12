@@ -7,9 +7,11 @@ from src.mylib.fruits import Fruit, random_fruit
 def fruit_bowl():
     return [Fruit("apple"), Fruit("banana"), Fruit("orange")]
 
+
 @pytest.mark.xdist_group(name="group")
 def test_random_fruit_no_fixture():
     assert random_fruit() in ["apple", "banana", "orange"]
+
 
 @pytest.mark.xdist_group(name="group")
 def test_random_fruit_fixture(fruit_bowl):

@@ -12,9 +12,9 @@ parallel-test:
 	python -m pytest -vv -n auto --dist loadgroup tests/*.py
 
 format:
-	black src/mylib/*.py tests/*.py
+	black $$(git ls-files '*.py')
 
 lint:
-	pylint --disable=C $$(git ls-files 'src/*.py')
+	pylint --disable=C $$(git ls-files '*.py')
 
 all: install lint test format
