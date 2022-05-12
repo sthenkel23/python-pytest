@@ -1,6 +1,11 @@
 from random import choices
 
 
+class Fruit:
+    def __init__(self, name):
+        self.my_fruit = name
+
+
 def unity(s: str = "Hello World!") -> str:
     """_summary_
 
