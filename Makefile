@@ -3,7 +3,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv test/test_hello.py
+	python -m pytest -vv tests/*.py
+
 format:
 	black src/python-pytest/*.py
 
